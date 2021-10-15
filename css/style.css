@@ -1,0 +1,132 @@
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+      
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+nav{
+  background-color: white;  
+  width: 100%;
+  height: 70px;
+  position: relative;  
+}
+nav img{
+    width: 70px;
+    position: absolute;
+    top: 15px;
+    left: 200px;
+}
+nav .links .menu {
+   position: absolute;
+   top: 20px;
+   right: 200px;
+   height: 20px;
+   width: 35px;
+   display: grid;
+   align-content: space-around;
+  direction: rtl;
+  z-index: 2;
+}
+
+nav .links .menu div {
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+    transition-duration: 500ms;
+}
+nav .links .menu :nth-child(2)
+{
+    width: 60%;    
+}
+nav .links .menu :last-child{
+    height: 3.5px;
+}
+nav .links:hover .menu div  {
+    width: 100%;
+    transition-duration: 500ms;
+}
+
+nav .links ul a {
+    text-decoration: none;
+    color: black;
+    
+}
+nav .links ul{
+    list-style: none;
+    position: absolute;
+    right: 200px;
+    top: 50px;
+    display: none;
+    z-index: 1;
+}
+nav .links ul::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 13px solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: relative;
+    top: -189px;
+    left: 143px;
+    
+    
+}
+ nav .links:hover ul {
+    display: block;
+ } 
+
+nav .links ul li{
+    background-color: #f6f6f6;
+    width: 170px;
+    padding: 10px;
+    padding-left: 20px;
+    border-top: rgb(221, 220, 220) solid 1px;
+    transition-duration: 500ms;
+}
+nav .links ul li:hover{
+    padding-left: 25px;
+    transition-duration: 500ms;
+    
+}
+nav .links ul li:first-child{
+    border-top: transparent solid 0px;
+
+}
+
+
+/* end nav */
+/* strat cover */
+.cover{
+    background-image:url(../images/landing.jpg) ;
+    background-size:cover;
+    height: calc(100vh - 70px);
+}
