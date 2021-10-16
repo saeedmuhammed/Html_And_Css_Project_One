@@ -129,4 +129,107 @@ nav .links ul li:first-child{
     background-image:url(../images/landing.jpg) ;
     background-size:cover;
     height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.cover * {
+  padding-bottom: 20px;
+}
+.cover h1 {
+  font-size: 50px;
+  padding-bottom: 25px;
+  color: #10cab7;
+}
+.cover p {
+  font-size: 20px;
+}
+/* end cover */
+/* start second part */
+.second-part {
+  background-color: #eee;
+}
+.second-part .container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 550px ;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+}
+.second-part .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.second-part .container .card p {
+  text-align: center;
+  line-height: 30px;
+  font-size: 17px;
+  padding-top: 50px;
+  color: #777;
+}
+.second-part .container .card i {
+  color: #10cab7;
+  font-size: 60px;
+  padding-bottom: 40px;
+}
+/* end second part */
+/* start services */
+.services .container {
+  height: calc(100vh + 200px);
+  display: grid;
+  padding-top: 100px;
+  align-items: center; 
+  grid-template-rows: 25% 30% 30% 15%;
+  grid-template-areas: "ser ser ser ser ser ser ser ser" "Gd Gd Gd Gd Wd Wd Wd Wd" "Ui Ui Ui Ui De De De De";
+  
+}
+.services .container .title {
+  grid-area: ser;
+  margin: auto;
+}
+.services .container .title h1{
+  font-size: 110px; 
+   color: #ebeced;
+}
+.services .container .title p {
+  text-align: center;
+  position: relative;
+  top: -35px;
+  font-size: 20px;
+  color: #797979;
+}
+.services .container .card i {
+
+  position: relative;
+  top: 28px;
+  right: 70px;
+  font-size: 40px;
+  color: #10cab7;
+  
+}
+.services .container .card h3 {
+  padding-bottom: 40px;
+
+}
+.services .container .card p {
+  font-size: 19px;
+  line-height: 30px;
+
+}
+.services .container .card1{
+  grid-area: Gd;
+}
+.services .container .card2  {
+  grid-area: Wd;
+}
+.services .container .card3  {
+  grid-area: Ui;
+}
+.services .container .card4  {
+  grid-area: De;
 }
